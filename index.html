@@ -5,19 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gii6kix.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gii6kix.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gii6kix.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gii6kix.css" />
     <script src="./scripts/navbar.js" defer></script>
     <title>Daybreakery</title>
   </head>
   <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="./">Home</a></li>
+    <nav class="main-nav">
+      <ul class="nav-items cocon">
         <li><a href="./about/">About</a></li>
-        <li><a href="./menu/">Menu</a></li>
-        <li><a href="./gallery/">Gallery</a></li>
-        <li><a href="./credits/">Credits</a></li>
+        <li class="pl-100"><a href="./menu/">Menu</a></li>
+        <li class="pl-100 merengue"><a href="./">Daybreakery</a></li>
+        <li class="pl-100"><a href="./gallery/">Gallery</a></li>
+        <li class="pl-100"><a href="./credits/">Credits</a></li>
       </ul>
+      <button id="toggle">Toggle Menu</button>
+      <div id="overlay"></div>
     </nav>
+
+    <header>
+      <video src="videos/opening-video.mp4" autoplay muted loop></video>
+      <!--<img src="./images/homepage/bakery-homepage.jpg" alt="" />-->
+      <div class="video-overlay">
+        <div>
+          <h1 class="cocon" id="welcome-text">Welcome to</h1>
+          <h1 class="merengue" id="home-header-text">Daybreakery</h1>
+          <a href="#beginning" class="montserrat enter-button">Enter</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="introduction">
+      <a id="beginning"></a>
+      <h2 class="cocon">Hello there</h2>
+      <p>
+        You have made it to Raleigh’s coziest bakery. We are open every day of
+        the week and offer a wide variety of goodies, including cakes, pastries,
+        breads, and drinks. Keep scrolling to get a better taste of what we do.
+      </p>
+    </div>
+    <div class="cards">
+      <h3>About Us</h3>
+      <div class="card">
+        <img
+          class="card-img"
+          src="images/homepage/kneading-dough.jpg"
+          alt="Person kneading dough"
+        />
+        <div class="container">
+          <p>
+            Daybreakery is the manifestation of two best friends’ dreams. Learn
+            more about us, our bakery, and how to reach us.
+          </p>
+        </div>
+      </div>
+      <h3>Menu</h3>
+      <div class="card">
+        <img
+          class="card-img"
+          src="images/homepage/menu.jpg"
+          alt="A menu on the wall of a restaurant"
+        />
+        <div class="container">
+          <p>
+            Whether you need morning motivation or an afternoon pick me up,
+            we’re here for you. Check out what we offer.
+          </p>
+        </div>
+      </div>
+      <h3>Gallery</h3>
+      <div class="card">
+        <img
+          class="card-img"
+          src="images/homepage/cake-one copy.jpg"
+          alt="Cakes behind a glass container"
+        />
+        <div class="container">
+          <p>
+            Warning: This page may trigger serious cravings. Enter at your own
+            risk.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-hours">
+        <h3>Hours</h3>
+        <ul class="footer-list">
+          <li>Weekdays: 7am-7pm</li>
+          <li>Weekends: 7am-3pm</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <ul class="footer-list">
+          <li>123 Croissant Drive</li>
+          <li>098-456-7123</li>
+          <li>daybreakery@yum.com</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

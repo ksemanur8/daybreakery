@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+}
+.main-nav {
+  margin: 0;
+  padding: 0 15px;
+  text-align: center;
+  list-style: none;
+  background-color: #002d5b;
+  color: #e3871a;
+}
+
+.main-nav li {
+  display: inline;
+}
+
+.main-nav a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0;
+}
+
+.nav-items {
+  margin: 0;
+}
+
+.pl-100 {
+  padding-left: 150px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #e3871a;
+}
+/*fonts*/
+.merengue {
+  font-family: merengue-script, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  font-style: normal;
+}
+
+.cocon {
+  font-family: ff-cocon-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.enter-button {
+  background-color: #e3871a;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 32px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  outline: none;
+}
+
+#welcome-text {
+  font-size: 30px;
+}
+
+#home-header-text {
+  font-size: 64px;
+}
+
+#toggle {
+  display: none;
+}
+#overlay {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* video overlay */
+header {
+  height: calc(100vh - 64px);
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 45, 91, 0.64);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-overlay > div {
+  color: #e3871a;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.video-overlay a {
+  color: white;
+  text-decoration: none;
+}
+
+/* homepage cards */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.cards {
+  display: flex;
+}
+
+.cards > div {
+  flex: 1 0;
+  margin: 0 10px;
+}
+
+.card-img {
+  height: 200px;
+}
+
+.container > p {
+  padding: 0 20px;
+  font-family: montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*Footer*/
+footer {
+  background-color: #002d5b;
+  color: white;
+  margin: 0;
+  font-family: montserrat, sans-serif;
+  display: flex;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0;
+}
