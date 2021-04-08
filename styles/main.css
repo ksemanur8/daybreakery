@@ -128,6 +128,10 @@ video {
   text-decoration: none;
 }
 
+.introduction {
+  padding: 0 30px;
+}
+
 /* homepage cards */
 
 .card {
@@ -136,8 +140,15 @@ video {
   border-radius: 5px;
 }
 
+.card-headers {
+  display: flex;
+  justify-content: center;
+}
+
 .cards {
   display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
 .cards > div {
@@ -156,16 +167,40 @@ video {
   line-height: 21px;
 }
 
+p {
+  font-family: montserrat, sans-serif;
+}
+
+h3 {
+  font-family: ff-cocon-pro, sans-serif;
+}
+
 /*Footer*/
 footer {
   background-color: #002d5b;
   color: white;
-  margin: 0;
   font-family: montserrat, sans-serif;
-  display: flex;
 }
 
-.footer-list {
-  list-style: none;
+footer > p {
+  text-align: center;
+  padding-bottom: 20px;
   margin: 0;
+  border-top: 0.0001px solid #5f626481;
+  padding-top: 20px;
+}
+.hours-and-contact {
+  display: flex;
+  justify-content: center;
+}
+.footer-hours {
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-contact {
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
