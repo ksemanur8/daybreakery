@@ -19,9 +19,14 @@ p {
   font-family: montserrat, sans-serif;
 }
 
-h3,
-h2 {
+h2,
+h3 {
   font-family: ff-cocon-pro, sans-serif;
+  color: #002d5b;
+}
+
+h4 {
+  font-family: montserrat-bold;
   color: #002d5b;
 }
 
@@ -76,8 +81,12 @@ h2 {
   margin: 0;
 }
 
-.pl-100 {
-  padding-left: 150px;
+.nav-items > * :hover {
+  color: #e2a355;
+}
+
+.pl-200 {
+  padding-left: 200px;
 }
 
 .enter-button {
@@ -131,6 +140,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .video-overlay > div {
@@ -153,7 +163,7 @@ video {
 /* Homepage cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .card-headers {
@@ -163,8 +173,6 @@ video {
 }
 
 .cards {
-  display: flex;
-  justify-content: space-around;
   padding: 30px;
 }
 
@@ -175,7 +183,15 @@ video {
 
 .card-img {
   height: 200px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.container {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .container > p {
@@ -200,10 +216,14 @@ video {
   float: right;
 }
 
+.card-buttons {
+  padding-right: 30px;
+}
+
 /*Footer*/
 footer {
   background-color: #002d5b;
-  color: white;
+  color: #e3871a;
   font-family: montserrat, sans-serif;
 }
 
@@ -225,7 +245,7 @@ footer > p {
 }
 
 .footer-hours > h3 {
-  color: white;
+  color: #e3871a;
 }
 
 .footer-contact {
@@ -235,5 +255,40 @@ footer > p {
 }
 
 .footer-contact > h3 {
-  color: white;
+  color: #e3871a;
+}
+
+/* Credits Page */
+.credits {
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Menu */
+.menu-items {
+  text-align: center;
+}
+.menu {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* About */
+.about-header {
+  height: 500px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-intro {
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
 }
