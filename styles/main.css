@@ -248,9 +248,12 @@ video {
 }
 
 .introduction {
-  padding: 0 30px;
   font-size: 16px;
   line-height: 24px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* Homepage header */
@@ -327,6 +330,12 @@ footer {
   background-color: #002d5b;
   color: #e3871a;
   font-family: montserrat, sans-serif;
+  padding-top: 10px;
+}
+
+.footer-contact,
+.footer-hours {
+  padding-left: 20px;
 }
 
 footer > p {
@@ -336,24 +345,9 @@ footer > p {
   border-top: 0.0001px solid #5f626481;
   padding-top: 20px;
 }
-.hours-and-contact {
-  display: flex;
-  justify-content: center;
-}
-.footer-hours {
-  padding-left: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
 .footer-hours > h3 {
   color: #e3871a;
-}
-
-.footer-contact {
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .footer-contact > h3 {
@@ -428,9 +422,12 @@ footer > p {
 }
 
 .about-intro {
-  padding-left: 50px;
   padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   line-height: 24px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .faqs {
@@ -554,5 +551,21 @@ footer > p {
 
   #mobile-nav {
     display: none;
+  }
+
+  .hours-and-contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-hours {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-contact {
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
