@@ -435,6 +435,11 @@ footer > p {
   display: block;
 }
 
+.gallery-header {
+  display: flex;
+  justify-content: center;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns - from w3schools*/
 @media screen and (max-width: 800px) {
   .gallery-row {
