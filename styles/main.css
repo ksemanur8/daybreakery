@@ -30,34 +30,6 @@ h4 {
   color: #002d5b;
 }
 
-/*Fonts*/
-.merengue {
-  font-family: merengue-script, sans-serif;
-  font-weight: 400;
-  font-size: 42px;
-  font-style: normal;
-}
-
-.cocon {
-  font-family: ff-cocon-pro, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.montserrat {
-  font-family: montserrat, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.montserrat-bold {
-  font-family: montserrat, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Navigation */
-
 .flex {
   display: flex;
 }
@@ -90,6 +62,34 @@ h4 {
   margin: 0;
 }
 
+/*Fonts*/
+.merengue {
+  font-family: merengue-script, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  font-style: normal;
+}
+
+.cocon {
+  font-family: ff-cocon-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Navigation */
+
 #toggle {
   display: none;
 }
@@ -98,28 +98,66 @@ h4 {
   display: none;
 }
 
-#main-nav {
+#mobile-nav {
   padding: 1rem;
   position: sticky;
   top: 0;
   background: #002d5b;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
 }
 
-#main-nav a {
+#mobile-nav a {
   text-decoration: none;
   font-weight: bold;
   font-family: ff-cocon-pro, sans-serif;
   color: #e3871a;
 }
 
+#daybreakery-mobile {
+  font-family: merengue-script, sans-serif !important;
+  font-size: 34px !important;
+}
+
+.fa-bars {
+  color: #e3871a;
+  font-size: 35px;
+}
+
 #desktop-nav {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
+  background: #002d5b;
+  padding: 10px;
+  position: sticky;
+}
+
+#desktop-nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: ff-cocon-pro, sans-serif;
+  color: #e3871a;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.fa-star {
+  color: #e3871a;
+  font-size: 10px;
+}
+
+#desktop-nav i {
+  display: flex;
+  align-items: center;
 }
 
 #daybreakery-desktop {
   padding-left: 50px;
   padding-right: 50px;
+  font-family: merengue-script, sans-serif !important;
+  font-size: 34px !important;
 }
 
 @media (max-width: 767px) {
@@ -128,10 +166,10 @@ h4 {
   }
   #items {
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 0;
     display: none;
-    background: gray;
+    background: #002d5b;
     width: 100%;
   }
 
@@ -144,7 +182,7 @@ h4 {
   }
 
   #items a {
-    color: white;
+    color: #e3871a;
   }
 
   #toggle {
@@ -397,14 +435,14 @@ footer > p {
   display: block;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout instead of four columns - from w3schools*/
 @media screen and (max-width: 800px) {
   .gallery-row {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other -from w3schools */
 @media screen and (max-width: 600px) {
   .gallery-row {
     grid-template-columns: 1fr 1fr;
@@ -424,8 +462,7 @@ footer > p {
     margin: 0 auto;
   }
   .column {
-    float: left;
-    width: 50%;
+    padding: 50px;
   }
 
   .row:after {
@@ -434,7 +471,7 @@ footer > p {
     clear: both;
   }
 
-  #main-nav {
+  #mobile-nav {
     display: none;
   }
 }

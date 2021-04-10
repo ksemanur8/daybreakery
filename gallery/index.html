@@ -17,15 +17,31 @@
     <title>Gallery</title>
   </head>
   <body>
-    <nav class="main-nav">
-      <ul class="nav-items cocon">
-        <li><a href="../about/">About</a></li>
-        <li class="pl-200"><a href="../menu/">Menu</a></li>
-        <li class="pl-200 merengue"><a href="../">Daybreakery</a></li>
-        <li class="pl-200"><a href="./">Gallery</a></li>
-        <li class="pl-200"><a href="../credits">Credits</a></li>
+    <nav id="desktop-nav">
+      <div class="flex items-center justify-around">
+        <a href="../about/">About us</a>
+        <i class="fas fa-star"></i>
+        <a href="../menu/">Menu</a>
+        <i class="fas fa-star"></i>
+      </div>
+      <a id="daybreakery-desktop" href="../">Daybreakery</a>
+      <div class="flex items-center justify-around">
+        <i class="fas fa-star"></i>
+        <a href="./">Gallery</a>
+        <i class="fas fa-star"></i>
+        <a href="../credits/">Credits</a>
+      </div>
+    </nav>
+
+    <nav id="mobile-nav" class="flex justify-between">
+      <a href="../" id="daybreakery-mobile"> Daybreakery </a>
+      <ul id="items" class="flex list-style-none p-0 m-0">
+        <li class="pl-1"><a href="../about/">About</a></li>
+        <li class="pl-1"><a href="../menu/">Menu</a></li>
+        <li class="pl-1"><a href="./">Gallery</a></li>
+        <li class="pl-1"><a href="../credits/">Credits</a></li>
       </ul>
-      <button id="toggle">Toggle Menu</button>
+      <i class="fas fa-bars" id="toggle"></i>
       <div id="overlay"></div>
     </nav>
     <h2 class="merengue gallery-header">Gallery</h2>
