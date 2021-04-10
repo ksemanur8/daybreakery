@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/accordion.js" defer></script>
     <title>About</title>
   </head>
   <body>
@@ -36,7 +37,7 @@
     <nav id="mobile-nav" class="flex justify-between">
       <a href="../" id="daybreakery-mobile"> Daybreakery </a>
       <ul id="items" class="flex list-style-none p-0 m-0">
-        <li class="pl-1"><a href="./">About</a></li>
+        <li class="pl-1"><a href="./">About us</a></li>
         <li class="pl-1"><a href="../menu/">Menu</a></li>
         <li class="pl-1"><a href="../gallery/">Gallery</a></li>
         <li class="pl-1"><a href="../credits/">Credits</a></li>
@@ -51,7 +52,7 @@
       />
     </div>
     <div class="about-intro">
-      <h2 class="merengue">Get to know us</h2>
+      <h2 class="merengue home-header">Get to know us</h2>
       <p>
         Hi! We are so glad you are here. Daybreakery was opened in 2045 by two
         best friends, Sena and Semanur, who have dreamed about having their own
@@ -71,28 +72,74 @@
         just seeking some warmth, stop by Daybreakery!
       </p>
     </div>
-    <div class="hours-and-contact">
-      <div class="footer-contact">
-        <h3>Contact</h3>
+    <div class="hours-and-contact row">
+      <div class="footer-contact column">
+        <h3 style="color: #002d5b">Contact</h3>
         <p>123 Croissant Drive</p>
         <p>098-456-7123</p>
         <p>daybreakery@yum.com</p>
       </div>
-      <div class="footer-hours">
-        <h3>Hours</h3>
+      <div class="footer-hours column">
+        <h3 style="color: #002d5b">Hours</h3>
         <p>Weekdays: 7am-7pm</p>
         <p>Weekends: 7am-3pm</p>
       </div>
     </div>
+    <h2 class="credits-header">FAQS</h2>
+    <div class="faqs">
+      <button class="accordion top-accordion">
+        How have operations changed during the COVID-19 pandemic?
+      </button>
+      <div class="panel">
+        <p>
+          All our staff members wear masks and get tested weekly. We also
+          provide no-contact delivery and increased outdoor seating.
+        </p>
+      </div>
+      <button class="accordion">Do you deliver?</button>
+      <div class="panel">
+        <p>Yes! We deliver anywhere within a 20 mile radius of our store.</p>
+      </div>
+      <button class="accordion">
+        Do you accommodate dietary restrictions?
+      </button>
+      <div class="panel">
+        <p>
+          Yes. Making sure our food can be a delight to everyone is of utmost
+          importance to us. If you order beforehand, we can prepare any menu
+          item in a gluten-free, kosher, halal, vegeterian, or vegan manner.
+        </p>
+      </div>
+      <button class="accordion">What is your hygiene rating?</button>
+      <div class="panel">
+        <p>100.00</p>
+      </div>
+      <button class="accordion">Do you cater?</button>
+      <div class="panel">
+        <p>
+          Yes! Email us at daybreakery@yum.com or call us at 098-456-7123 if
+          you're interested in letting us cater for you!
+        </p>
+      </div>
+      <button class="accordion bottom-accordion">
+        Do you make custom cakes?
+      </button>
+      <div class="panel">
+        <p>
+          We sure do. Email us at daybreakery@yum.com or call us at 098-456-7123
+          to share your cake-vision and we'll bring it to life.
+        </p>
+      </div>
+    </div>
     <footer>
-      <div class="hours-and-contact">
-        <div class="footer-contact">
+      <div class="hours-and-contact row">
+        <div class="footer-contact column">
           <h3>Contact</h3>
           <p>123 Croissant Drive</p>
           <p>098-456-7123</p>
           <p>daybreakery@yum.com</p>
         </div>
-        <div class="footer-hours">
+        <div class="footer-hours column">
           <h3>Hours</h3>
           <p>Weekdays: 7am-7pm</p>
           <p>Weekends: 7am-3pm</p>

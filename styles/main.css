@@ -192,7 +192,6 @@ h4 {
 
 .enter-button {
   background-color: #e3871a;
-  color: white;
   border: none;
   padding: 10px 25px;
   border-radius: 32px;
@@ -254,6 +253,13 @@ video {
   line-height: 24px;
 }
 
+/* Homepage header */
+.home-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
 /* Homepage cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -267,7 +273,9 @@ video {
 }
 
 .cards {
-  padding: 30px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .cards > div {
@@ -373,7 +381,12 @@ footer > p {
   padding-bottom: 50px;
   max-width: 600px;
   margin: 0 auto;
-  padding-left: 20px;
+}
+
+@media (max-width: 400px) {
+  .menu {
+    max-width: 300px;
+  }
 }
 
 .menu > ul {
@@ -416,7 +429,69 @@ footer > p {
 
 .about-intro {
   padding-left: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
+  line-height: 24px;
+}
+
+.faqs {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+}
+.top-accordion {
+  border-radius: 30px 30px 0px 0px;
+}
+
+.bottom-accordion {
+  border-radius: 0px 0px 30px 30px;
+}
+
+.accordion {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgba(128, 128, 128, 0.459);
+}
+
+.bottom-accordion.active {
+  border-radius: 0px 0px 0px 0px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  width: 96.2%;
+}
+
+.accordion:after {
+  content: "\02795";
+  font-size: 13px;
+  color: grey;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2796";
 }
 
 /* Gallery */
@@ -424,8 +499,9 @@ footer > p {
 .gallery-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 8px;
-  padding: 0 8px;
+  gap: 10px;
+  padding: 0 40px;
+  padding-bottom: 40px;
 }
 
 .gallery-column img {
