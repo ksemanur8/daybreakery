@@ -430,7 +430,7 @@ footer > p {
   padding-left: 30px;
   padding-right: 30px;
   line-height: 24px;
-  max-width: 1300px;
+  max-width: 75ch;
   margin: 0 auto;
 }
 
