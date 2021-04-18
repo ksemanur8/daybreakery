@@ -249,10 +249,15 @@ video {
 .introduction {
   font-size: 16px;
   line-height: 24px;
-  max-width: 1300px;
-  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.introduction p {
+  max-width: 75ch;
+  margin: 0 auto;
 }
 
 /* Homepage header */
